@@ -1,0 +1,3 @@
+<overrides xmlns="http://www.ceylon-lang.org/xsd/overrides">
+	<remove module="org.slf4j.simple"/>
+</overrides>
