@@ -25,7 +25,7 @@ restController
 class RestController {
 	
 	shared new () {
-	}
+	} 
 	
 	requestMapping ({ "/hello" })
 	shared String helloWorld() {
