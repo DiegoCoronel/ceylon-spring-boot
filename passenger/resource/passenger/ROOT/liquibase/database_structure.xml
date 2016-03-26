@@ -1,0 +1,21 @@
+<databaseChangeLog xmlns='http://www.liquibase.org/xml/ns/dbchangelog'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
+
+	<changeSet id='passenger_structure' author='diego.coronel'>
+		
+		<sql>
+			CREATE SCHEMA passenger;
+		</sql>
+	
+		<createTable schemaName="passenger" tableName="person">
+			<column name="id" type="java.sql.Types.INTEGER" autoIncrement="true" startWith="1">
+				<constraints primaryKey="true" primaryKeyName="person_pkey" nullable="false" />
+			</column>
+			<column name="name" type="java.sql.Types.VARCHAR(255)">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+	</changeSet>
+	
+</databaseChangeLog>

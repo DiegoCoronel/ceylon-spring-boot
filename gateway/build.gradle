@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+    	classpath "gradle.plugin.com.athaydes.gradle.ceylon:ceylon-gradle-plugin:1.1.2"
+    }
+}
+
+plugins {
+  id "com.athaydes.ceylon" version "1.1.2"
+}
+apply plugin: 'com.athaydes.ceylon'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+    	url "https://repo.spring.io/libs-milestone"
+    }
+}
+
+configurations {
+    all {
+        exclude group: "ch.qos.logback"
+    }
+}
+
+ceylon {
+    module = "gateway"
+    ceylonLocation = "/Users/DiegoCoronel/Work/Git/ceylon/ceylon/dist/dist/bin/ceylon"
+}

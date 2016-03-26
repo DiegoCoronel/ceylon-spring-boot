@@ -1,0 +1,21 @@
+# [ DataSource Configuration ]
+spring:
+  jpa: 
+    database: postgresql
+    show-sql: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/ceylon-spring
+    driver-class-name: org.postgresql.Driver
+    username: ceylon
+    password: ceylon
+    
+# [ AppServer Configuration Section ]
+server: 
+  port: 0 
+  context-path: /passenger
+  
+# [ Liquibase ]
+liquibase:
+  change-log: classpath:/liquibase/db.changelog-master.xml
+  enabled: true
