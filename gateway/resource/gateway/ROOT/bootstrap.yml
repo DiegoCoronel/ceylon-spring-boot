@@ -1,0 +1,12 @@
+# [ Eureka Configuration Section ]
+
+spring:
+  application:
+    name: ceylon-gateway
+
+eureka: 
+  client:
+    enabled: true
+    register-with-eureka: false 
+    service-url: 
+      defaultZone: http://${discovery.service.hostname:localhost}:${discovery.service.port:8761}/eureka/

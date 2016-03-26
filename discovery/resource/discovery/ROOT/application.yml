@@ -1,0 +1,14 @@
+# [ Eureka Configuration Section ]
+spring:
+  application:
+    name: ceylon-eureka-server
+
+server:
+  port: ${discovery.service.port:8761}
+
+eureka:
+  instance:
+    hostname: ${discovery.service.hostname:localhost}
+  client:
+    register-with-eureka: false
+    fetch-registry: false

@@ -1,0 +1,10 @@
+# [ Zuul Configuration Section ]
+server:
+  port: ${gateway.service.port:8080}
+
+zuul:
+  routes:
+    passenger:
+      path: /passenger/**
+      service-id: passenger
+      strip-prefix: false

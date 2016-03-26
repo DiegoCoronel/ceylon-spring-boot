@@ -1,0 +1,12 @@
+
+[compiler]
+source=source
+resource=resource
+
+[defaults]
+encoding=UTF-8
+overrides=build/overrides.xml
+flatclasspath=true
+
+[repositories]
+remote=aether:/Users/DiegoCoronel/Documents/workspace/passenger/build/maven-settings.xml
