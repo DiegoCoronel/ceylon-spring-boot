@@ -8,4 +8,4 @@ encoding=UTF-8
 overrides=build/overrides.xml
 
 [repositories]
-remote=aether:/Users/DiegoCoronel/Documents/workspace/gateway/build/maven-settings.xml
+remote=aether:build/maven-settings.xml
