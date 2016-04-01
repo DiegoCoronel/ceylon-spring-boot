@@ -31,6 +31,6 @@ shared class Person(name, id = null) {
 		return false;
 	}
 	
-	hash => id?.hash else 37;
+	hash => id?.hash else super.hash;
 	
 }
