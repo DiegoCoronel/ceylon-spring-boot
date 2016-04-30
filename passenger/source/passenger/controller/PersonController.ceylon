@@ -3,8 +3,10 @@ import org.springframework.web.bind.annotation {
 	requestMapping,
 	requestBody,
 	RequestMethod {
-		post=\iPOST
-	}
+		post = \iPOST,
+		_get = \iGET
+	},
+	pathVariable
 }
 import java.lang {
 	JLong=Long
@@ -33,6 +35,11 @@ shared class PersonController(repository) {
 		
 		assert(exists id = user.id);
 		return id;
+	}
+	
+	requestMapping{ path={"/{id}"}; method = {_get}; consumes = {"application/json"}; produces = {"application/json"};}
+	shared Person? get(pathVariable{ "id"; } JLong id) {
+		return repository.findOne(id);
 	}
 
 	
