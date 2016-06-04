@@ -13,7 +13,7 @@ import java.lang {
 	JLong = Long
 }
 
-sequenceGenerator{name="person_sequence"; sequenceName="passenger.person_id_seq"; allocationSize=1;}
+sequenceGenerator{ name="person_sequence"; sequenceName="passenger.person_id_seq"; allocationSize=1;}
 entity table{ schema = "passenger"; } 
 shared class Person(name, id = null) {
 	
@@ -28,6 +28,7 @@ shared class Person(name, id = null) {
 		if(is Person other, exists otherId = other.id, exists thisId = id) {
 			return thisId == otherId;
 		}
+		
 		return false;
 	}
 	
