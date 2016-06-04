@@ -8,3 +8,7 @@ zuul:
       path: /passenger/**
       service-id: passenger
       strip-prefix: false
+    flight:
+      path: /flight/**
+      service-id: flight
+      strip-prefix: false

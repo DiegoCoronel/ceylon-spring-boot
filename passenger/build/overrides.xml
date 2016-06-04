@@ -6,8 +6,8 @@
     <add groupId='commons-logging' artifactId='commons-logging' version='1.2' shared='true' />
     <add groupId='org.springframework' artifactId='spring-context' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework' artifactId='spring-aop' version='4.2.5.RELEASE' shared='true' />
-    <add groupId='aopalliance' artifactId='aopalliance' version='1.0' shared='true' />
     <add groupId='org.springframework' artifactId='spring-beans' version='4.2.5.RELEASE' shared='true' />
+    <add groupId='aopalliance' artifactId='aopalliance' version='1.0' shared='true' />
     <add groupId='org.springframework' artifactId='spring-expression' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-autoconfigure' version='1.3.3.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-starter-logging' version='1.3.3.RELEASE' shared='true' />
@@ -16,21 +16,21 @@
     <add groupId='org.slf4j' artifactId='log4j-over-slf4j' version='1.7.16' shared='true' />
     <add groupId='org.slf4j' artifactId='jcl-over-slf4j' version='1.7.16' shared='true' />
     <add groupId='org.yaml' artifactId='snakeyaml' version='1.16' shared='true' />
-    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-tomcat' version='1.3.3.RELEASE' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-core' version='8.0.32' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-el' version='8.0.32' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-logging-juli' version='8.0.32' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-websocket' version='8.0.32' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-starter-validation' version='1.3.3.RELEASE' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-el' version='8.0.32' shared='true' />
     <add groupId='org.hibernate' artifactId='hibernate-validator' version='5.2.4.Final' shared='true' />
     <add groupId='org.jboss.logging' artifactId='jboss-logging' version='3.2.1.Final' shared='true' />
-    <add groupId='com.fasterxml' artifactId='classmate' version='1.1.0' shared='true' />
     <add groupId='javax.validation' artifactId='validation-api' version='1.1.0.Final' shared='true' />
+    <add groupId='com.fasterxml' artifactId='classmate' version='1.1.0' shared='true' />
+    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-databind' version='2.6.5' shared='true' />
+    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-core' version='2.6.5' shared='true' />
+    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-annotations' version='2.6.5' shared='true' />
     <add groupId='org.springframework' artifactId='spring-web' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework' artifactId='spring-webmvc' version='4.2.5.RELEASE' shared='true' />
-    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-databind' version='2.6.5' shared='true' />
-    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-annotations' version='2.6.5' shared='true' />
-    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-core' version='2.6.5' shared='true' />
+    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-tomcat' version='1.3.3.RELEASE' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-core' version='8.0.32' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-logging-juli' version='8.0.32' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-websocket' version='8.0.32' shared='true' />
   </artifact>
   <artifact groupId='org.springframework.boot' artifactId='spring-boot-starter-undertow' version='1.3.3.RELEASE'>
     <add groupId='io.undertow' artifactId='undertow-core' version='1.3.18.Final' shared='true' />
@@ -46,15 +46,15 @@
     <add groupId='org.glassfish' artifactId='javax.el' version='3.0.0' shared='true' />
   </artifact>
   <artifact groupId='org.springframework.cloud' artifactId='spring-cloud-starter-eureka' version='1.1.0.RC1'>
-    <add groupId='org.springframework.cloud' artifactId='spring-cloud-starter' version='1.1.0.RC1' shared='true' />
+    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-web' version='1.3.3.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-starter' version='1.3.3.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot' version='1.3.3.RELEASE' shared='true' />
     <add groupId='org.springframework' artifactId='spring-core' version='4.2.5.RELEASE' shared='true' />
     <add groupId='commons-logging' artifactId='commons-logging' version='1.2' shared='true' />
     <add groupId='org.springframework' artifactId='spring-context' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework' artifactId='spring-aop' version='4.2.5.RELEASE' shared='true' />
-    <add groupId='aopalliance' artifactId='aopalliance' version='1.0' shared='true' />
     <add groupId='org.springframework' artifactId='spring-beans' version='4.2.5.RELEASE' shared='true' />
+    <add groupId='aopalliance' artifactId='aopalliance' version='1.0' shared='true' />
     <add groupId='org.springframework' artifactId='spring-expression' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-autoconfigure' version='1.3.3.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-starter-logging' version='1.3.3.RELEASE' shared='true' />
@@ -62,10 +62,26 @@
     <add groupId='org.slf4j' artifactId='slf4j-api' version='1.7.16' shared='true' />
     <add groupId='org.slf4j' artifactId='log4j-over-slf4j' version='1.7.16' shared='true' />
     <add groupId='org.slf4j' artifactId='jcl-over-slf4j' version='1.7.16' shared='true' />
+    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-validation' version='1.3.3.RELEASE' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-el' version='8.0.32' shared='true' />
+    <add groupId='org.hibernate' artifactId='hibernate-validator' version='5.2.4.Final' shared='true' />
+    <add groupId='org.jboss.logging' artifactId='jboss-logging' version='3.2.1.Final' shared='true' />
+    <add groupId='javax.validation' artifactId='validation-api' version='1.1.0.Final' shared='true' />
+    <add groupId='com.fasterxml' artifactId='classmate' version='1.1.0' shared='true' />
+    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-databind' version='2.6.5' shared='true' />
+    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-core' version='2.6.5' shared='true' />
+    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-annotations' version='2.6.5' shared='true' />
+    <add groupId='org.springframework' artifactId='spring-web' version='4.2.5.RELEASE' shared='true' />
+    <add groupId='org.springframework' artifactId='spring-webmvc' version='4.2.5.RELEASE' shared='true' />
+    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-tomcat' version='1.3.3.RELEASE' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-core' version='8.0.32' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-logging-juli' version='8.0.32' shared='true' />
+    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-websocket' version='8.0.32' shared='true' />
+    <add groupId='org.yaml' artifactId='snakeyaml' version='1.16' shared='true' />
+    <add groupId='org.springframework.cloud' artifactId='spring-cloud-starter' version='1.1.0.RC1' shared='true' />
     <add groupId='org.springframework.cloud' artifactId='spring-cloud-context' version='1.1.0.RC1' shared='true' />
     <add groupId='org.springframework.security' artifactId='spring-security-crypto' version='4.0.3.RELEASE' shared='true' />
     <add groupId='org.springframework.cloud' artifactId='spring-cloud-commons' version='1.1.0.RC1' shared='true' />
-    <add groupId='org.yaml' artifactId='snakeyaml' version='1.16' shared='true' />
     <add groupId='org.springframework.cloud' artifactId='spring-cloud-netflix-core' version='1.1.0.RC1' shared='true' />
     <add groupId='org.springframework.cloud' artifactId='spring-cloud-netflix-eureka-client' version='1.1.0.RC1' shared='true' />
     <add groupId='com.netflix.eureka' artifactId='eureka-client' version='1.4.4' shared='true' />
@@ -79,13 +95,10 @@
     <add groupId='commons-configuration' artifactId='commons-configuration' version='1.8' shared='true' />
     <add groupId='commons-lang' artifactId='commons-lang' version='2.6' shared='true' />
     <add groupId='com.google.guava' artifactId='guava' version='18.0' shared='true' />
-    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-annotations' version='2.6.5' shared='true' />
-    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-core' version='2.6.5' shared='true' />
-    <add groupId='com.fasterxml.jackson.core' artifactId='jackson-databind' version='2.6.5' shared='true' />
     <add groupId='com.google.code.findbugs' artifactId='jsr305' version='3.0.1' shared='true' />
     <add groupId='com.netflix.servo' artifactId='servo-core' version='0.12.3' shared='true' />
     <add groupId='com.netflix.netflix-commons' artifactId='netflix-infix' version='0.3.0' shared='true' />
-    <add groupId='joda-time' artifactId='joda-time' version='2.9.2' shared='true' />
+    <add groupId='joda-time' artifactId='joda-time' version='2.9.3' shared='true' />
     <add groupId='commons-jxpath' artifactId='commons-jxpath' version='1.3' shared='true' />
     <add groupId='org.antlr' artifactId='antlr-runtime' version='3.4' shared='true' />
     <add groupId='antlr' artifactId='antlr' version='2.7.7' shared='true' />
@@ -114,10 +127,6 @@
     <add groupId='com.google.inject.extensions' artifactId='guice-grapher' version='4.0' shared='true' />
     <add groupId='com.google.inject.extensions' artifactId='guice-assistedinject' version='4.0' shared='true' />
     <add groupId='org.ow2.asm' artifactId='asm' version='5.0.4' shared='true' />
-    <add groupId='org.hibernate' artifactId='hibernate-validator' version='5.2.4.Final' shared='true' />
-    <add groupId='org.jboss.logging' artifactId='jboss-logging' version='3.2.1.Final' shared='true' />
-    <add groupId='com.fasterxml' artifactId='classmate' version='1.1.0' shared='true' />
-    <add groupId='javax.validation' artifactId='validation-api' version='1.1.0.Final' shared='true' />
     <add groupId='org.codehaus.woodstox' artifactId='woodstox-core-asl' version='4.4.1' shared='true' />
     <add groupId='javax.xml.stream' artifactId='stax-api' version='1.0-2' shared='true' />
     <add groupId='org.codehaus.woodstox' artifactId='stax2-api' version='3.1.4' shared='true' />
@@ -145,15 +154,6 @@
     <add groupId='com.netflix.hystrix' artifactId='hystrix-core' version='1.4.3' shared='true' />
     <add groupId='commons-collections' artifactId='commons-collections' version='3.2.1' shared='true' />
     <add groupId='com.netflix.ribbon' artifactId='ribbon-eureka' version='2.1.3' shared='true' />
-    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-web' version='1.3.3.RELEASE' shared='true' />
-    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-tomcat' version='1.3.3.RELEASE' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-core' version='8.0.32' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-el' version='8.0.32' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-logging-juli' version='8.0.32' shared='true' />
-    <add groupId='org.apache.tomcat.embed' artifactId='tomcat-embed-websocket' version='8.0.32' shared='true' />
-    <add groupId='org.springframework.boot' artifactId='spring-boot-starter-validation' version='1.3.3.RELEASE' shared='true' />
-    <add groupId='org.springframework' artifactId='spring-web' version='4.2.5.RELEASE' shared='true' />
-    <add groupId='org.springframework' artifactId='spring-webmvc' version='4.2.5.RELEASE' shared='true' />
   </artifact>
   <artifact groupId='org.springframework.boot' artifactId='spring-boot-starter-data-jpa' version='1.3.3.RELEASE' shared='true'>
     <add groupId='org.springframework.boot' artifactId='spring-boot-starter' version='1.3.3.RELEASE' shared='true' />
@@ -162,8 +162,8 @@
     <add groupId='commons-logging' artifactId='commons-logging' version='1.2' shared='true' />
     <add groupId='org.springframework' artifactId='spring-context' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework' artifactId='spring-aop' version='4.2.5.RELEASE' shared='true' />
-    <add groupId='aopalliance' artifactId='aopalliance' version='1.0' shared='true' />
     <add groupId='org.springframework' artifactId='spring-beans' version='4.2.5.RELEASE' shared='true' />
+    <add groupId='aopalliance' artifactId='aopalliance' version='1.0' shared='true' />
     <add groupId='org.springframework' artifactId='spring-expression' version='4.2.5.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-autoconfigure' version='1.3.3.RELEASE' shared='true' />
     <add groupId='org.springframework.boot' artifactId='spring-boot-starter-logging' version='1.3.3.RELEASE' shared='true' />
