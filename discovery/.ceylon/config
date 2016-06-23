@@ -9,4 +9,4 @@ overrides=build/overrides.xml
 flatclasspath=true
 
 [repositories]
-remote=aether:/Users/DiegoCoronel/Work/Git/ceylon-spring-boot/discovery/build/maven-settings.xml
+remote=aether:build/maven-settings.xml
