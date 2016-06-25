@@ -14,7 +14,7 @@ import java.lang {
 
 sequenceGenerator{ name="reserve_sequence"; sequenceName="reservation.reserve_id_seq"; allocationSize=1;}
 entity table{ schema = "reservation"; } 
-shared class Reserve(id, passenger, flight) {
+shared class Reserve(passenger, flight, id = null) {
 	
 	id generated { strategy = auto; generator="reserve_sequence"; }
 	shared JLong|Null id;
