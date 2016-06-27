@@ -9,5 +9,14 @@ A arquitetura ficou dividida em alguns microserviços:
 - Passenger (BAR): Registro de pessoas que podem usar aviões... ou se ficar mais fácil pense em BAR.
 - Reservation (FOOBAR): Apenas para usar o stack feign, ribbon e discovery. União de aviões e passageiros (FOOBAR).
 
+## Configuração do ambiente
 
-Mais tarde contínuo a documentação... agora tenho que fazer o trabalho pago ;)
+Pré-Requisitos:
+- Atualmente é necessário usa a versão do master (1.2.3)
+
+Eclipse:
+- Importar todos os projetos como um projeto eclipse
+- Entrar em cada um dos projetos e executar: `gradle compileCeylon`
+- Refresh dos projetos
+
+
