@@ -4,11 +4,9 @@ import org.springframework.cloud.netflix.feign {
 import org.springframework.web.bind.annotation {
 	requestMapping,
 	RequestMethod {
-		post = \iPOST,
 		get = \iGET
 	},
-	pathVariable,
-	requestBody
+	pathVariable
 }
 import java.lang {
 	JLong=Long

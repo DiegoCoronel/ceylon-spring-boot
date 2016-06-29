@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation {
 import org.springframework.beans.factory.annotation {
 	autowiredField=autowired__FIELD
 }
-import reservation.repository {
-	ReservationRepository
-}
 import java.lang {
 	JLong=Long
 }
