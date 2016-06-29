@@ -12,7 +12,7 @@ A arquitetura ficou dividida em alguns microserviços:
 ## Configuração do ambiente
 
 Pré-Requisitos:
-- Atualmente é necessário usa a versão do master (1.2.3)
+- Atualmente é necessário usar a versão do master (1.2.3)
 - Postgres (9.4)
  - database: ceylon-spring 
  - login: ceylon
