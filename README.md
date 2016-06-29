@@ -13,10 +13,13 @@ A arquitetura ficou dividida em alguns microserviços:
 
 Pré-Requisitos:
 - Atualmente é necessário usa a versão do master (1.2.3)
+- Postgres (9.4)
+ - database: ceylon-spring 
+ - login: ceylon
+ - password: ceylon
 
 Eclipse:
 - Importar todos os projetos como um projeto eclipse
 - Entrar em cada um dos projetos e executar: `gradle compileCeylon`
 - Refresh dos projetos
-
 
