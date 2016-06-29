@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation {
 	requestBody,
 	RequestMethod {
 		post = \iPOST,
-		_get = \iGET
+		get = \iGET
 	},
 	pathVariable
 }
@@ -37,8 +37,8 @@ shared class FlightController(repository) {
 		return id;
 	}
 	
-	requestMapping{ path={"/{id}"}; method = {_get}; consumes = {"application/json"}; produces = {"application/json"};}
-	shared Airplane? get(pathVariable{ "id"; } JLong id) {
+	requestMapping{ path={"/{id}"}; method = {get}; consumes = {"application/json"}; produces = {"application/json"};}
+	shared Airplane? find(pathVariable{ "id"; } JLong id) {
 		return repository.findOne(id);
 	}
 	
