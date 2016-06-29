@@ -12,10 +12,10 @@
 			<column name="id" type="java.sql.Types.INTEGER" autoIncrement="true" startWith="1">
 				<constraints primaryKey="true" primaryKeyName="airplane_pkey" nullable="false" />
 			</column>
-			<column name="id_flight" type="java.sql.Types.INTEGER">
+			<column name="flight" type="java.sql.Types.INTEGER">
 				<constraints nullable="false"/>
 			</column>
-			<column name="id_passenger" type="java.sql.Types.INTEGER">
+			<column name="passenger" type="java.sql.Types.INTEGER">
 				<constraints nullable="false"/>
 			</column>
 		</createTable>

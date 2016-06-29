@@ -18,18 +18,20 @@ import java.lang {
 import reservation.model {
 	Reserve
 }
+import reservation.service {
+	Service
+}
 restController
 requestMapping({ "/reservation" })
-shared class ReservationController(repository) {
+shared class ReservationController(service) {
 	
 	autowiredField
-	ReservationRepository repository;
+	Service service;
 	
 	requestMapping{ method = {post}; consumes = {"application/json"}; produces = {"application/json"};}
 	shared JLong create(requestBody Reserve reserve) {
 		assert(! reserve.id exists);
-		repository.save(reserve);
-		
+		service.save(reserve);
 		assert(exists id = reserve.id);
 		return id;
 	}
