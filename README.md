@@ -22,6 +22,7 @@ Eclipse:
 - Importar todos os projetos como um projeto eclipse
 - Entrar em cada um dos projetos e executar: `gradle compileCeylon`
  - Aqui é importante ressaltar que é necessário estar com a versão 1.2.3 do Ceylon no classpath, caso esteja com uma versão diferente é possível configurar o caminho no arquivo build.gradle e adicionar: `ceylonLocation = "/your_compatible_ceylon_path/dist/bin/ceylon"` próximo a declaração do seu módule.
+ - Outro importante detalhe é que o plugin do gradle-ceylon ainda não suporta o prefixo `maven:`, por enquanto aconselho remover o prefixo, executar o comando e depois adicionar novamente para que a IDE reconheça corretamente.
 
   
 - Refresh dos projetos
@@ -55,9 +56,7 @@ Um importante detalhe é que os serviços não ficam disponíveis no mesmo momen
  - POST http://localhost:8080/reservation/reservation
 ```json
 {
-  {
-    "passenger" : 1,
-    "flight" : 1
-  }
+  "passenger" : 1,
+  "flight" : 1
 }
 ```
