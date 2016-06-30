@@ -29,5 +29,4 @@ configurations {
 
 ceylon {
     module = "discovery"
-    ceylonLocation = "/Users/DiegoCoronel/Work/Git/ceylon/ceylon/dist/dist/bin/ceylon"
 }

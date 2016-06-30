@@ -35,6 +35,4 @@ dependencies {
 
 ceylon {
     module = "passenger"
-    testModule = "test"
-    ceylonLocation = "/Users/DiegoCoronel/Work/Git/ceylon/ceylon/dist/dist/bin/ceylon"
 }

@@ -35,5 +35,4 @@ dependencies {
 
 ceylon {
     module = "reservation"
-    ceylonLocation = "/Users/DiegoCoronel/Work/Git/ceylon/ceylon/dist/dist/bin/ceylon"
 }
