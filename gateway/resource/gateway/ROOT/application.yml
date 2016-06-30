@@ -12,3 +12,7 @@ zuul:
       path: /flight/**
       service-id: flight
       strip-prefix: false
+    reservation:
+      path: /reservation/**
+      service-id: reservation
+      strip-prefix: false
