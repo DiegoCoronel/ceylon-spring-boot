@@ -29,11 +29,9 @@ shared class Service(passengerClient, flightClient, repository) {
 	
 	shared void save(Reserve reserve) {
 		value person = passengerClient.find(reserve.passenger);
-		print(person);
 		assert(person exists);
 		
 		value airplane = flightClient.find(reserve.flight);
-		print(airplane);
 		assert(airplane exists);
 		
 		repository.save(reserve);
