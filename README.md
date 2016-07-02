@@ -1,33 +1,32 @@
 # SpringBoot - Ceylon
 
-Este projeto tem caráter experimental e está sendo feito por pura diversão em meu tempo livre. Portanto se os contextos dos microserviços não fizerem sentido ou se parece uma super engenharia para apenas alguns CRUD`s é porque estou apenas testando alguns conceitos tanto da linguagem quanto do springboot.
+This project is experimental and is being done for fun in my spare time. So if the contexts of microserviços do not make sense or looks like a super engineering for just a few CRUD`s 's because I'm just testing some concepts of both the language and the springboot.
 
-A arquitetura ficou dividida em alguns microserviços:
-- Gateway: Testar uma entrada única que faça balanceamento de carga para os serviços registrados no discovery.
-- Discovery: Testar os microserviços ser registrando e ficando disponíveis.
-- Foo: Apenas um módulo qualquer chamado foo.
-- Bar: Apenas um módulo qualquer chamado bar.
-- FooBar: Um módulo para integrar foo e bar.
+The architecture was divided:
+- Gateway: Testing a single entry that do load balancing for services registered in the discovery.
+- Discovery: Test microservices be recorded and become available.
+- Foo: Just foo.
+- Bar: Just bar.
+- FooBar: Just foo and bar (test feign client, ribbon, etc).
 
-## Configuração do ambiente
+## Setup
 
-Pré-Requisitos:
-- Atualmente é necessário usar a versão do master (1.2.3)
+Prerequisites:
+- Currently you must use the version of the master ( 1.2.3 )
 - Postgres (9.4)
  - database: ceylon-spring 
  - login: ceylon
  - password: ceylon
 
 Eclipse:
-- Importar todos os projetos como um projeto eclipse
-- Entrar em cada um dos projetos e executar: `gradle compileCeylon`
- - Aqui é importante ressaltar que é necessário estar com a versão 1.2.3 do Ceylon no classpath, caso esteja com uma versão diferente é possível configurar o caminho no arquivo build.gradle e adicionar: `ceylonLocation = "/your_compatible_ceylon_path/dist/bin/ceylon"` próximo a declaração do seu módule.
- - Outro importante detalhe é que o plugin do gradle-ceylon ainda não suporta o prefixo `maven:`, por enquanto aconselho remover o prefixo, executar o comando e depois adicionar novamente para que a IDE reconheça corretamente.
-- Refresh dos projetos
+- Import all project as eclipse project.
+- For each microservice run: `gradle compileCeylon`
+ - Here it is important to emphasize that it is necessary to be with the 1.2.3 version of Ceylon in the classpath, if with a different version you can set the path in build.gradle file and add: ` ceylonLocation =" / your_compatible_ceylon_path / dist / bin / ceylon " ` close the statement of its module.
+- Refresh all projects in eclipse.
 
-## Usando os serviços
+## How to use the microservices
 
-Um importante detalhe é que os serviços não ficam disponíveis no mesmo momento que os serviços estão UP, isso deve-se a estratégia utilizada pelo discovery que consistem basicamente em aguardar 3 batimentos. Portanto não se assuste se no primeiro momento parecer que o serviço não ficou disponível. O tempo padrão de espera é de 30 segundos por batimento.
+An important detail is that the services are not available at the same time that services are UP, this is due to the strategy used by the discovery that consist basically wait 3 beats. So do not be surprised if at first seem that the service was not available. The default standby time is 30 seconds per beat.
 
 - Discovery
  - http://localhost:8761/
@@ -58,3 +57,5 @@ Um importante detalhe é que os serviços não ficam disponíveis no mesmo momen
   "foo" : 1
 }
 ```
+
+Enjoy and please open issues if you have problems with configuration.
