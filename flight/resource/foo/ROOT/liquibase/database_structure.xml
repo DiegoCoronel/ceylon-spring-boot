@@ -1,0 +1,25 @@
+<databaseChangeLog xmlns='http://www.liquibase.org/xml/ns/dbchangelog'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
+
+	<changeSet id='foo_structure' author='diego.coronel'>
+		
+		<sql>
+			CREATE SCHEMA foo;
+		</sql>
+	
+		<createTable schemaName="foo" tableName="foo">
+			<column name="id" type="java.sql.Types.INTEGER" autoIncrement="true" startWith="1">
+				<constraints primaryKey="true" primaryKeyName="foo_pkey" nullable="false" />
+			</column>
+			<column name="maximum_places" type="java.sql.Types.INTEGER">
+				<constraints nullable="false"/>
+			</column>
+			<column name="available_places" type="java.sql.Types.INTEGER">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+		
+	</changeSet>
+	
+</databaseChangeLog>

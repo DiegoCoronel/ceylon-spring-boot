@@ -1,0 +1,9 @@
+# [ Eureka Configuration Section ]
+spring:
+  application:
+    name: bar
+
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/

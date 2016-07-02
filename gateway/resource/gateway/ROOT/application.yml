@@ -5,14 +5,14 @@ server:
 zuul:
   routes:
     passenger:
-      path: /passenger/**
-      service-id: passenger
+      path: /bar/**
+      service-id: bar
       strip-prefix: false
     flight:
-      path: /flight/**
-      service-id: flight
+      path: /foo/**
+      service-id: foo
       strip-prefix: false
     reservation:
-      path: /reservation/**
-      service-id: reservation
+      path: /foobar/**
+      service-id: foobar
       strip-prefix: false
