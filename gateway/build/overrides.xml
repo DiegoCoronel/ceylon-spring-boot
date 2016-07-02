@@ -197,8 +197,4 @@
     <add groupId='org.codehaus.woodstox' artifactId='stax2-api' version='3.1.4' shared='true' />
     <add groupId='com.netflix.ribbon' artifactId='ribbon-eureka' version='2.1.3' shared='true' />
   </artifact>
-  <artifact groupId='org.javamoney' artifactId='moneta' version='1.1'>
-    <add groupId='javax.money' artifactId='money-api' version='1.0.1' shared='true' />
-    <add groupId='javax.annotation' artifactId='javax.annotation-api' version='1.2' shared='true' />
-  </artifact>
 </overrides>

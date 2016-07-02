@@ -28,7 +28,7 @@ configurations {
 }
 
 dependencies {
-    ceylonCompile "org.springframework.boot:spring-boot-starter-web:1.3.3.RELEASE", {
+    ceylonCompile "org.springframework.boot:spring-boot-starter-web:1.3.5.RELEASE", {
         exclude module: "spring-boot-starter-tomcat"
     }
 }

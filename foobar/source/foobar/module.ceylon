@@ -9,7 +9,7 @@ module foobar "1.0.0" {
 	import "org.springframework.cloud:spring-cloud-starter-eureka" "1.1.2.RELEASE"; 
 	import "org.springframework.cloud:spring-cloud-starter-feign" "1.1.2.RELEASE";
 	
-	import "maven:postgresql:postgresql" "9.1-901-1.jdbc4";
+	import "org.postgresql:postgresql" "9.4.1208";
 	
 	import "org.liquibase:liquibase-core" "3.4.2";
 }
