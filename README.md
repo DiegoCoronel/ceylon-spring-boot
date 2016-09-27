@@ -12,7 +12,7 @@ The architecture was divided:
 ## Setup
 
 Prerequisites:
-- Currently you must use the version of the master ( 1.2.3 )
+- Ceylon 1.3.0
 - Postgres (9.4)
  - database: ceylon-spring 
  - login: ceylon
@@ -21,7 +21,6 @@ Prerequisites:
 Eclipse:
 - Import all project as eclipse project.
 - For each microservice run: `gradle compileCeylon`
- - Here it is important to emphasize that it is necessary to be with the 1.2.3 version of Ceylon in the classpath, if with a different version you can set the path in build.gradle file and add: `ceylonLocation=/your_compatible_ceylon_path/dist/bin/ceylon`.
 - Refresh all projects in eclipse.
 
 ## How to use the microservices
