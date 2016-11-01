@@ -1,0 +1,4 @@
+<overrides>
+  <remove groupId="ch.qos.logback" artifactId="logback-core" />
+  <remove groupId="ch.qos.logback" artifactId="logback-classic" />
+</overrides>

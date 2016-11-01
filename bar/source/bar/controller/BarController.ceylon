@@ -36,7 +36,7 @@ shared class PersonController(repository) {
 		return id;
 	}
 	
-	requestMapping{ path={"/{id}"}; method = {get}; consumes = {"application/json"}; produces = {"application/json"};}
+	requestMapping{ path={"/{id}"}; method = {get}; produces = {"application/json"};}
 	shared Bar? find(pathVariable{ "id"; } JLong id) {
 		return repository.findOne(id);
 	}

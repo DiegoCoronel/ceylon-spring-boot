@@ -8,6 +8,5 @@ import ceylon.interop.java {
 
 "Run the module `flight`."
 shared void run() {
-	value springApplication = SpringApplication();
-	springApplication.run(javaClass<FooBarApplication>());
+	SpringApplication.run(javaClass<FooBarApplication>());
 }

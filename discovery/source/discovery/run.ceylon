@@ -6,6 +6,5 @@ import ceylon.interop.java {
 }
 "Run the module `discovery`."
 shared void run() {
-	value springApplication = SpringApplication();
-	springApplication.run(javaClass<DiscoveryApplication>());
+	SpringApplication.run(javaClass<DiscoveryApplication>());
 }

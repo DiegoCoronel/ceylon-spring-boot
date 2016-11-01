@@ -5,8 +5,7 @@ resource=resource
 
 [defaults]
 encoding=UTF-8
-overrides=build/overrides.xml
+overrides=overrides.xml
 flatclasspath=true
+fullyexportmavendependencies=true
 
-[repositories]
-remote=aether:build/maven-settings.xml

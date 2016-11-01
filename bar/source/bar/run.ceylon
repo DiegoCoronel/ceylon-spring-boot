@@ -7,6 +7,5 @@ import ceylon.interop.java {
 
 "Run the module `passenger`."
 shared void run() {
-	value springApplication = SpringApplication();
-	springApplication.run(javaClass<BarApplication>());
+	SpringApplication.run(javaClass<BarApplication>());
 }
