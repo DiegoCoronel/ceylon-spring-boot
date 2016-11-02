@@ -3,29 +3,29 @@ import org.springframework.cloud.netflix.feign {
 }
 import org.springframework.web.bind.annotation {
 	requestMapping,
-	RequestMethod {
-		get = \iGET
-	},
+	RequestMethod,
 	pathVariable
-}
-import java.lang {
-	JLong=Long
 }
 
 feignClient{ "foo"; path = "foo/"; }
 shared interface FooClient {
 	
-	requestMapping{ path={"/{id}"}; method = {get}; consumes = {"application/json"}; produces = {"application/json"};}
-	shared formal Foo? find(pathVariable{ "id"; } JLong id);
+	requestMapping { 
+		path = ["/{id}"]; 
+		method = [RequestMethod.get]; 
+		consumes = ["application/json"]; 
+		produces = ["application/json"];
+	}
+	shared formal Foo? find(pathVariable("id") Integer id);
 	
 }
 
 shared class Foo(
 	maximumPlaces, 
-	id = null, 
+	id = 0, 
 	availablePlaces = maximumPlaces) {
 	
-	shared JLong|Null id;
+	shared Integer id;
 	
 	shared Integer maximumPlaces;
 	
