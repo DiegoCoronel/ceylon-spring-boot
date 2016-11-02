@@ -2,17 +2,15 @@ import org.springframework.web.bind.annotation {
 	restController,
 	requestMapping,
 	requestBody,
-	RequestMethod {
-		post = \iPOST,
-		get = \iGET
-	},
+	RequestMethod,
 	pathVariable
 }
 import java.lang {
-	JLong=Long
+	JLong = Long,
+	JIterable = Iterable
 }
 import org.springframework.beans.factory.annotation {
-	autowiredField=autowired__FIELD
+	autowired
 }
 import bar.repository {
 	BarRepository
@@ -24,22 +22,33 @@ import bar.model {
 restController
 shared class PersonController(repository) {
 	
-	autowiredField
+	autowired
 	BarRepository repository;
 	
-	requestMapping{ method = {post}; consumes = {"application/json"}; produces = {"application/json"};}
-	shared JLong create(requestBody Bar bar) {
-		assert(! bar.id exists);
+	requestMapping { 
+		method   = [RequestMethod.post]; 
+		consumes = ["application/json"]; 
+		produces = ["application/json"];
+	}
+	shared Integer create(requestBody Bar bar) {
+		assert(bar.id == 0);
 		repository.save(bar);
 		
-		assert(exists id = bar.id);
-		return id;
+		assert(bar.id != 0);
+		return bar.id;
 	}
 	
-	requestMapping{ path={"/{id}"}; method = {get}; produces = {"application/json"};}
-	shared Bar? find(pathVariable{ "id"; } JLong id) {
-		return repository.findOne(id);
+	requestMapping { 
+		method = [RequestMethod.get]; 
+		produces = ["application/json"];
 	}
+	shared JIterable<Bar> findAll() => repository.findAll();
 
+	requestMapping { 
+		path = ["/{id}"]; 
+		method = [RequestMethod.get]; 
+		produces = ["application/json"];
+	}
+	shared Bar? find(pathVariable("id") Integer id) => repository.findOne(JLong(id));
 	
 }

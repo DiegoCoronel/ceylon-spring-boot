@@ -1,37 +1,16 @@
 import javax.persistence {
 	entity,
-	id = id__FIELD, 
-	generated = generatedValue__FIELD, 
-	GenerationType { 
-		auto = \iAUTO
-	},
-	table,
-	sequenceGenerator
+	id,
+	generatedValue,
+	GenerationType
 }
 
-import java.lang {
-	JLong = Long
-}
-
-sequenceGenerator{ name="bar_sequence"; sequenceName="bar.bar_id_seq"; allocationSize=1;}
-entity table{ schema = "bar"; } 
-shared class Bar(name, id = null) {
+entity
+shared class Bar(name, id = 0) {
 	
-	id generated { strategy = auto; generator="bar_sequence";}
-	shared JLong|Null id;
+	id generatedValue { strategy = GenerationType.auto; }
+	shared Integer id;
 	
 	shared String name;
-	
-	string => "Bar { id: ``id else "<null>"`` name: ``name`` }";
-	
-	shared actual Boolean equals(Object other) {
-		if(is Bar other, exists otherId = other.id, exists thisId = id) {
-			return thisId == otherId;
-		}
-		
-		return false;
-	}
-	
-	hash => id?.hash else super.hash;
 	
 }
