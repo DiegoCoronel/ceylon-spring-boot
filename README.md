@@ -1,8 +1,14 @@
 # SpringBoot - Ceylon
 
-This project is experimental and is being done for fun in my spare time. So if the contexts of microserviços do not make sense or looks like a super engineering for just a few CRUD`s 's because I'm just testing some concepts of both the language and the springboot.
+An example [SpringBoot][] service written in [Ceylon][], 
+demonstrating the use of discovery, gateway, feign client, jpa, dependency injection, etc.
 
-The architecture was divided:
+This project is experimental and is being done for fun in my spare time. So dont worry if the microservices do not make sense or looks like a super engineering for just a few CRUD`s.
+
+[Ceylon]: https://ceylon-lang.org
+[SpringBoot]: https://projects.spring.io/spring-boot/
+
+The projects were divided:
 - Gateway: Testing a single entry that do load balancing for services registered in the discovery.
 - Discovery: Test microservices be recorded and become available.
 - Foo: Just foo.
@@ -11,17 +17,22 @@ The architecture was divided:
 
 ## Setup
 
-Prerequisites:
-- Ceylon 1.3.0
-- Postgres (9.4)
- - database: ceylon-spring 
- - login: ceylon
- - password: ceylon
+### Prerequisites
 
-Eclipse:
-- Import all project as eclipse project.
-- For each microservice run: `gradle compileCeylon`
-- Refresh all projects in eclipse.
+You'll need the following prerequisites to get started:
+
+- [Ceylon 1.3.1+](https://ceylon-lang.org/download)
+- [Eclipse Plugin] (https://ceylon-lang.org/download/)
+- Import all project as eclipse project
+
+## Starting the service
+
+For each project theres a file `run.ceylon`
+
+    Right-Click ->  Run As -> Ceylon Java Application
+
+It's possible to start the service in any order, but I would suggest to start first _discovery_ service.
+
 
 ## How to use the microservices
 
