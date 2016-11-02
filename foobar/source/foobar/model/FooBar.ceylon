@@ -1,36 +1,18 @@
 import javax.persistence {
-	sequenceGenerator,
-	table,
 	entity,
-	id=id__FIELD,
-	generated=generatedValue__FIELD,
-	GenerationType { 
-		auto = \iAUTO
-	}
-}
-import java.lang {
-	JLong=Long
+	id,
+	generatedValue,
+	GenerationType
 }
 
-sequenceGenerator{ name="foobar_sequence"; sequenceName="foobar.foo_bar_id_seq"; allocationSize=1;}
-entity table{ schema = "foobar"; } 
-shared class FooBar(foo, bar, id = null) {
+entity 
+shared class FooBar(foo, bar, id = 0) {
 	
-	id generated { strategy = auto; generator="foobar_sequence"; }
-	shared JLong|Null id;
+	id generatedValue { strategy = GenerationType.auto; }
+	shared Integer id;
 	
-	shared JLong foo;
+	shared Integer foo;
 	
-	shared JLong bar;
-	
-	shared actual Boolean equals(Object other) {
-		if(is FooBar other, exists otherId = other.id, exists thisId = id) {
-			return thisId == otherId;
-		}
-		
-		return false;
-	}
-	
-	hash => id?.hash else super.hash;
+	shared Integer bar;
 	
 }

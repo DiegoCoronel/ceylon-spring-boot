@@ -2,15 +2,10 @@ import org.springframework.web.bind.annotation {
 	restController,
 	requestMapping,
 	requestBody,
-	RequestMethod {
-		post = \iPOST
-	}
+	RequestMethod
 }
 import org.springframework.beans.factory.annotation {
-	autowiredField=autowired__FIELD
-}
-import java.lang {
-	JLong=Long
+	autowired
 }
 import foobar.model {
 	FooBar
@@ -18,19 +13,32 @@ import foobar.model {
 import foobar.service {
 	Service
 }
+import java.lang {
+	JIterable = Iterable
+}
+
 restController
 shared class FooBarController(service) {
 	
-	autowiredField
+	autowired
 	Service service;
 	
-	requestMapping{ method = {post}; consumes = {"application/json"}; produces = {"application/json"};}
-	shared JLong create(requestBody FooBar fooBar) {
-		assert(! fooBar.id exists);
+	requestMapping { 
+		method = [RequestMethod.post]; 
+		consumes = ["application/json"]; 
+		produces = ["application/json"];
+	}
+	shared Integer create(requestBody FooBar fooBar) {
+		assert(fooBar.id == 0);
 		service.save(fooBar);
-		assert(exists id = fooBar.id);
-		return id;
+		assert(fooBar.id != 0);
+		return fooBar.id;
 	}
 	
+	requestMapping { 
+		method = [RequestMethod.get]; 
+		produces = ["application/json"];
+	}
+	shared JIterable<FooBar> findAll() => service.findAll();
 	
 }

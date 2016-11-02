@@ -1,0 +1,5 @@
+<overrides>
+  <remove groupId="ch.qos.logback" artifactId="logback-core" />
+  <remove groupId="ch.qos.logback" artifactId="logback-classic" />
+  <add groupId="com.fasterxml.jackson.dataformat" artifactId="jackson-dataformat-xml" version="2.7.3" />
+</overrides>

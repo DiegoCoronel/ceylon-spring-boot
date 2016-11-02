@@ -2,7 +2,7 @@ import org.springframework.stereotype {
 	service
 }
 import org.springframework.beans.factory.annotation {
-	autowired = autowired__FIELD
+	autowired
 }
 import foobar.external {
 	BarClient,
@@ -13,6 +13,9 @@ import foobar.model {
 }
 import foobar.repository {
 	FooBarRepository
+}
+import java.lang {
+	JIterable = Iterable
 }
 
 service
@@ -35,6 +38,10 @@ shared class Service(barClient, fooClient, repository) {
 		assert(foo exists);
 		
 		repository.save(foobar);
+	}
+	
+	shared JIterable<FooBar> findAll() {
+		return repository.findAll();
 	}
 	
 }

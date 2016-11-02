@@ -1,14 +1,15 @@
 # [ DataSource Configuration ]
+
 spring:
-  jpa: 
-    database: postgresql
-    show-sql: true
   datasource:
-    platform: postgres
-    url: jdbc:postgresql://localhost:5432/ceylon-spring
-    driver-class-name: org.postgresql.Driver
-    username: ceylon
-    password: ceylon
+    platform: h2
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:  
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration
     
 # [ AppServer Configuration Section ]
 server: 

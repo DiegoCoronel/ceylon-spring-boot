@@ -1,35 +1,20 @@
-import java.lang {
-	JLong=Long
-}
-
 import javax.persistence {
-	id=id__FIELD,
-	generated=generatedValue__FIELD,
-	GenerationType {
-		auto
-	},
-	sequenceGenerator,
-	table,
+	id,
+	generatedValue,
+	GenerationType,
 	entity
 }
-import javax.validation.constraints {
-	notNull=notNull__FIELD
-}
 
-sequenceGenerator{name="foo_sequence"; sequenceName="foo.foo_id_seq"; allocationSize=1;}
-entity table{ schema = "foo"; } 
+entity
 shared class Foo(
 	maximumPlaces, 
-	id = null, 
+	id = 0, 
 	availablePlaces = maximumPlaces) {
 	
-	id generated { strategy = auto; generator="foo_sequence";}
-	shared JLong|Null id;
+	id generatedValue { strategy = GenerationType.auto; }
+	shared Integer id;
 	
-	notNull
 	shared Integer maximumPlaces;
 	
-	notNull
 	variable Integer availablePlaces;
-	
 }

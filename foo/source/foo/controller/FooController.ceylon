@@ -2,16 +2,14 @@ import org.springframework.web.bind.annotation {
 	restController,
 	requestMapping,
 	requestBody,
-	RequestMethod {
-		post = \iPOST,
-		get = \iGET
-	},
+	RequestMethod,
 	pathVariable
 }
 import org.springframework.beans.factory.annotation {
-	autowiredField=autowired__FIELD
+	autowired
 }
 import java.lang {
+	JIterable = Iterable,
 	JLong=Long
 }
 import foo.model {
@@ -24,21 +22,33 @@ import foo.repository {
 restController
 shared class FooController(repository) {
 	
-	autowiredField
+	autowired
 	FooRepository repository;
 	
-	requestMapping{ method = {post}; consumes = {"application/json"}; produces = {"application/json"};}
-	shared JLong create(requestBody Foo foo) {
-		assert(! foo.id exists);
+	requestMapping { 
+		method = [RequestMethod.post]; 
+		consumes = ["application/json"]; 
+		produces = ["application/json"];
+	}
+	shared Integer create(requestBody Foo foo) {
+		assert(foo.id == 0);
 		repository.save(foo);
 		
-		assert(exists id = foo.id);
-		return id;
+		assert(foo.id != 0);
+		return foo.id;
 	}
 	
-	requestMapping{ path={"/{id}"}; method = {get}; consumes = {"application/json"}; produces = {"application/json"};}
-	shared Foo? find(pathVariable{ "id"; } JLong id) {
-		return repository.findOne(id);
+	requestMapping { 
+		path = ["/{id}"]; 
+		method = [RequestMethod.get]; 
+		produces = ["application/json"];
 	}
+	shared Foo? find(pathVariable{ "id"; } JLong id) => repository.findOne(id);
+	
+	requestMapping { 
+		method = [RequestMethod.get]; 
+		produces = ["application/json"];
+	}
+	shared JIterable<Foo> findAll() => repository.findAll();
 	
 }

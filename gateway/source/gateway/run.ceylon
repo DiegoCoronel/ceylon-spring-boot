@@ -6,6 +6,5 @@ import ceylon.interop.java {
 }
 "Run the module `gateway`."
 shared void run() {
-	value springApplication = SpringApplication();
-	springApplication.run(javaClass<GatewayApplication>());
+	SpringApplication.run(javaClass<GatewayApplication>());
 }
