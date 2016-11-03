@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure {
 import org.springframework.cloud.netflix.feign {
 	enableFeignClients
 }
+
 springBootApplication
 enableEurekaClient
 enableFeignClients

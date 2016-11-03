@@ -7,12 +7,11 @@ import javax.persistence {
 
 entity
 shared class Foo(
-	maximumPlaces, 
-	id = 0, 
+	maximumPlaces,
 	availablePlaces = maximumPlaces) {
 	
-	id generatedValue { strategy = GenerationType.auto; }
-	shared Integer id;
+	id generatedValue
+	shared late Integer id;
 	
 	shared Integer maximumPlaces;
 	

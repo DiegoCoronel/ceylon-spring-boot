@@ -4,7 +4,6 @@ import org.springframework.boot {
 import ceylon.interop.java {
 	javaClass
 }
-"Run the module `discovery`."
-shared void run() {
-	SpringApplication.run(javaClass<DiscoveryApplication>());
-}
+"Run the service."
+shared void run()
+		=> SpringApplication.run(javaClass<DiscoveryApplication>());

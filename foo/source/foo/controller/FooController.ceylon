@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation {
 	autowired
 }
 import java.lang {
-	JIterable = Iterable,
-	JLong=Long
+	Iterable,
+	Long
 }
 import foo.model {
 	Foo
@@ -43,12 +43,14 @@ shared class FooController(repository) {
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared Foo? find(pathVariable{ "id"; } JLong id) => repository.findOne(id);
+	shared Foo? find(pathVariable("id") Integer id)
+			=> repository.findOne(Long(id));
 	
 	requestMapping { 
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared JIterable<Foo> findAll() => repository.findAll();
+	shared Iterable<Foo> findAll()
+			=> repository.findAll();
 	
 }

@@ -14,7 +14,7 @@ import foobar.service {
 	Service
 }
 import java.lang {
-	JIterable = Iterable
+	Iterable
 }
 
 restController
@@ -39,6 +39,6 @@ shared class FooBarController(service) {
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared JIterable<FooBar> findAll() => service.findAll();
+	shared Iterable<FooBar> findAll() => service.findAll();
 	
 }

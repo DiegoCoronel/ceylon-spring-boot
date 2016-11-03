@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation {
 	pathVariable
 }
 import java.lang {
-	JLong = Long,
-	JIterable = Iterable
+	Long,
+	Iterable
 }
 import org.springframework.beans.factory.annotation {
 	autowired
@@ -42,13 +42,15 @@ shared class PersonController(repository) {
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared JIterable<Bar> findAll() => repository.findAll();
+	shared Iterable<Bar> findAll()
+			=> repository.findAll();
 
 	requestMapping { 
 		path = ["/{id}"]; 
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared Bar? find(pathVariable("id") Integer id) => repository.findOne(JLong(id));
+	shared Bar? find(pathVariable("id") Integer id)
+			=> repository.findOne(Long(id));
 	
 }

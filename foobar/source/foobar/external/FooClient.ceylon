@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation {
 	pathVariable
 }
 
-feignClient{ "foo"; path = "foo/"; }
+feignClient { "foo"; path = "foo/"; }
 shared interface FooClient {
 	
 	requestMapping { 

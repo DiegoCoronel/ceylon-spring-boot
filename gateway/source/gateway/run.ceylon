@@ -4,7 +4,6 @@ import org.springframework.boot {
 import ceylon.interop.java {
 	javaClass
 }
-"Run the module `gateway`."
-shared void run() {
-	SpringApplication.run(javaClass<GatewayApplication>());
-}
+"Run the service."
+shared void run()
+		=> SpringApplication.run(javaClass<GatewayApplication>());

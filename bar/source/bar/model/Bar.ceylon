@@ -6,10 +6,10 @@ import javax.persistence {
 }
 
 entity
-shared class Bar(name, id = 0) {
+shared class Bar(name) {
 	
-	id generatedValue { strategy = GenerationType.auto; }
-	shared Integer id;
+	id generatedValue
+	shared late Integer id;
 	
 	shared String name;
 	

@@ -6,7 +6,6 @@ import ceylon.interop.java {
 	javaClass
 }
 
-"Run the module `foo`."
-shared void run() {
-	SpringApplication.run(javaClass<FooApplication>());
-}
+"Run the service."
+shared void run()
+		=> SpringApplication.run(javaClass<FooApplication>());
