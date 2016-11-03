@@ -1,7 +1,6 @@
 import javax.persistence {
 	id,
 	generatedValue,
-	GenerationType,
 	entity
 }
 
