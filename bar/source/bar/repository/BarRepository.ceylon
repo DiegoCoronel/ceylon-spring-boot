@@ -1,12 +1,10 @@
-import java.lang {
-	Long
-}
-import org.springframework.data.repository {
-	CrudRepository
-}
 import bar.model {
 	Bar
 }
 
-shared interface BarRepository satisfies CrudRepository<Bar,Long> {
+import ceylon.interop.spring {
+	CeylonRepository
 }
+
+shared interface BarRepository
+		satisfies CeylonRepository<Bar,Integer> {}

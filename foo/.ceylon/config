@@ -3,6 +3,9 @@
 source=source
 resource=resource
 
+[compiler.jvm]
+ee=true
+
 [defaults]
 encoding=UTF-8
 overrides=overrides.xml

@@ -1,22 +1,23 @@
+import bar.model {
+	Bar
+}
+import bar.repository {
+	BarRepository
+}
+
+import java.lang {
+	Iterable
+}
+
+import org.springframework.beans.factory.annotation {
+	autowired
+}
 import org.springframework.web.bind.annotation {
 	restController,
 	requestMapping,
 	requestBody,
 	RequestMethod,
 	pathVariable
-}
-import java.lang {
-	Long,
-	Iterable
-}
-import org.springframework.beans.factory.annotation {
-	autowired
-}
-import bar.repository {
-	BarRepository
-}
-import bar.model {
-	Bar
 }
 
 restController
@@ -51,6 +52,6 @@ shared class PersonController(repository) {
 		produces = ["application/json"];
 	}
 	shared Bar? find(pathVariable("id") Integer id)
-			=> repository.findOne(Long(id));
+			=> repository.findOne(id);
 	
 }

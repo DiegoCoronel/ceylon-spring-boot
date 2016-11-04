@@ -1,22 +1,23 @@
+import foo.model {
+	Foo
+}
+import foo.repository {
+	FooRepository
+}
+
+import java.lang {
+	Iterable
+}
+
+import org.springframework.beans.factory.annotation {
+	autowired
+}
 import org.springframework.web.bind.annotation {
 	restController,
 	requestMapping,
 	requestBody,
 	RequestMethod,
 	pathVariable
-}
-import org.springframework.beans.factory.annotation {
-	autowired
-}
-import java.lang {
-	Iterable,
-	Long
-}
-import foo.model {
-	Foo
-}
-import foo.repository {
-	FooRepository
 }
 
 restController
@@ -44,7 +45,7 @@ shared class FooController(repository) {
 		produces = ["application/json"];
 	}
 	shared Foo? find(pathVariable("id") Integer id)
-			=> repository.findOne(Long(id));
+			=> repository.findOne(id);
 	
 	requestMapping { 
 		method = [RequestMethod.get]; 
