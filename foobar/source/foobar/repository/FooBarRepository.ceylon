@@ -2,13 +2,10 @@ import org.springframework.data.repository {
 	CrudRepository
 }
 import java.lang {
-	JLong=Long
+	Long
 }
 import foobar.model {
 	FooBar
 }
-shared interface FooBarRepository satisfies CrudRepository<FooBar, JLong>{
-	
-	
-	
+shared interface FooBarRepository satisfies CrudRepository<FooBar,Long> {
 }

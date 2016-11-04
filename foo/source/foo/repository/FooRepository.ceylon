@@ -1,5 +1,5 @@
 import java.lang {
-	JLong=Long
+	Long
 }
 import org.springframework.data.repository {
 	CrudRepository
@@ -7,6 +7,5 @@ import org.springframework.data.repository {
 import foo.model {
 	Foo
 }
-shared interface FooRepository satisfies CrudRepository<Foo, JLong>{
-	
+shared interface FooRepository satisfies CrudRepository<Foo,Long> {
 }
