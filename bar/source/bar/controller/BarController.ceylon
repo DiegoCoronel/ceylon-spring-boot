@@ -5,8 +5,8 @@ import bar.repository {
 	BarRepository
 }
 
-import java.lang {
-	Iterable
+import java.util {
+	List
 }
 
 import org.springframework.beans.factory.annotation {
@@ -43,7 +43,7 @@ shared class PersonController(repository) {
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared Iterable<Bar> findAll()
+	shared List<Bar> findAll()
 			=> repository.findAll();
 
 	requestMapping { 

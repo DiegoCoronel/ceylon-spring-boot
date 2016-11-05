@@ -1,7 +1,7 @@
 native("jvm")
 module bar "1.0.0" {
 	import ceylon.interop.java "1.3.0";
-	
+
 	shared import maven:"org.springframework.boot:spring-boot-starter-web" "1.3.8.RELEASE";
 	shared import maven:"org.springframework.boot:spring-boot-starter-data-jpa" "1.3.8.RELEASE";
 

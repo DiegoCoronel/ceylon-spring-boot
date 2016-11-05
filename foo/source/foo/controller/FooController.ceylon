@@ -5,8 +5,8 @@ import foo.repository {
 	FooRepository
 }
 
-import java.lang {
-	Iterable
+import java.util {
+	List
 }
 
 import org.springframework.beans.factory.annotation {
@@ -51,7 +51,7 @@ shared class FooController(repository) {
 		method = [RequestMethod.get]; 
 		produces = ["application/json"];
 	}
-	shared Iterable<Foo> findAll()
+	shared List<Foo> findAll()
 			=> repository.findAll();
 	
 }

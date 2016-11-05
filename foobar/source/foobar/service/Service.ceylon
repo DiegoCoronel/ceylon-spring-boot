@@ -14,8 +14,8 @@ import foobar.model {
 import foobar.repository {
 	FooBarRepository
 }
-import java.lang {
-	Iterable
+import java.util {
+	List
 }
 
 service
@@ -40,6 +40,6 @@ shared class Service(barClient, fooClient, repository) {
 		repository.save(foobar);
 	}
 	
-	shared Iterable<FooBar> findAll() => repository.findAll();
+	shared List<FooBar> findAll() => repository.findAll();
 	
 }

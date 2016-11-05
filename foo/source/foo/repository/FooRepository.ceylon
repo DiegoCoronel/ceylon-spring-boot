@@ -1,9 +1,9 @@
 import ceylon.interop.spring {
-    CeylonRepository
+	CeylonRepository
 }
 
 import foo.model {
-    Foo
+	Foo
 }
 
 shared interface FooRepository
