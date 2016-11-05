@@ -8,20 +8,14 @@ import org.springframework.boot.autoconfigure {
 import org.springframework.cloud.netflix.eureka {
 	enableEurekaClient
 }
-import org.springframework.context.annotation {
-	configuration
-}
 import org.springframework.data.jpa.repository.config {
 	enableJpaRepositories
 }
 
 springBootApplication
 enableEurekaClient
-shared class FooApplication() {}
-
-configuration
 enableJpaRepositories {
 	repositoryBaseClass
 			= `class CeylonRepositoryImpl`;
 }
-class FooApplicationConfiguration() {}
+shared class FooApplication() {}
