@@ -1,4 +1,6 @@
 <overrides>
   <remove groupId="ch.qos.logback" artifactId="logback-core" />
   <remove groupId="ch.qos.logback" artifactId="logback-classic" />
+  
+  <add groupId="org.springframework" artifactId="spring-orm" version="4.3.3.RELEASE" />
 </overrides>
