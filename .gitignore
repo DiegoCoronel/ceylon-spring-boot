@@ -9,3 +9,4 @@
 **/.ceylon/config~
 **/.ceylon/ide-config~
 .idea/libraries/
+.idea/workspace.xml

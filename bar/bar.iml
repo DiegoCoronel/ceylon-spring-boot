@@ -21,88 +21,84 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: antlr:antlr/2.7.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: aopalliance:aopalliance/1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.collection/1.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.interop.java/1.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.interop.spring/1.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.language/1.3.2-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-annotations/2.6.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-core/2.6.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-databind/2.6.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-annotations/2.8.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-core/2.8.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-databind/2.8.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml:classmate/1.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.google.guava:guava/18.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.h2database:h2/1.4.193" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.archaius:archaius-core/0.7.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.eureka:eureka-client/1.4.10" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.eureka:eureka-core/1.4.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.eureka:eureka-client/1.4.11" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.eureka:eureka-core/1.4.11" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.ribbon:ribbon/2.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.ribbon:ribbon-core/2.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.ribbon:ribbon-eureka/2.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.ribbon:ribbon-httpclient/2.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.netflix.ribbon:ribbon-loadbalancer/2.2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.thoughtworks.xstream:xstream/1.4.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.thoughtworks.xstream:xstream/1.4.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: commons-configuration:commons-configuration/1.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: commons-lang:commons-lang/2.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: dom4j:dom4j/1.6.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: io.reactivex:rxjava/1.1.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: io.reactivex:rxjava/1.1.10" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: javax.transaction:javax.transaction-api/1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: javax.validation:validation-api/1.1.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-core/8.0.37" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-el/8.0.37" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-logging-juli/8.0.37" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-websocket/8.0.37" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat:tomcat-jdbc/8.0.37" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat:tomcat-juli/8.0.37" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-core/8.5.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-el/8.5.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat.embed:tomcat-embed-websocket/8.5.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat:tomcat-jdbc/8.5.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.apache.tomcat:tomcat-juli/8.5.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.aspectj:aspectjweaver/1.8.9" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.bouncycastle:bcpkix-jdk15on/1.47" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.bouncycastle:bcprov-jdk15on/1.47" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate.common:hibernate-commons-annotations/4.0.5.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.bouncycastle:bcpkix-jdk15on/1.55" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.bouncycastle:bcprov-jdk15on/1.55" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate.common:hibernate-commons-annotations/5.0.1.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate.javax.persistence:hibernate-jpa-2.1-api/1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate:hibernate-core/4.3.11.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate:hibernate-entitymanager/4.3.11.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate:hibernate-core/5.0.11.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate:hibernate-entitymanager/5.0.11.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.hibernate:hibernate-validator/5.2.4.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.javassist:javassist/3.18.1-GA" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.jboss.logging:jboss-logging/3.2.1.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.jboss.logging:jboss-logging-annotations/1.2.0.Beta1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.jboss:jandex/1.1.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.liquibase:liquibase-core/3.4.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.jboss.logging:jboss-logging/3.3.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.jboss:jandex/2.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.liquibase:liquibase-core/3.5.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.slf4j:jcl-over-slf4j/1.7.21" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.slf4j:jul-to-slf4j/1.7.21" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.slf4j:log4j-over-slf4j/1.7.21" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.slf4j:slf4j-api/1.7.21" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-autoconfigure/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-aop/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-data-jpa/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-jdbc/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-logging/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-tomcat/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-validation/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-web/1.3.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-commons/1.1.2.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-context/1.1.2.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-netflix-core/1.1.6.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-netflix-eureka-client/1.1.6.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter/1.1.2.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter-archaius/1.1.6.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter-eureka/1.1.6.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter-ribbon/1.1.6.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.data:spring-data-commons/1.12.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.data:spring-data-jpa/1.10.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.security:spring-security-crypto/4.0.4.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.security:spring-security-rsa/1.0.1.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-aop/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-aspects/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-beans/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-context/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-core/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-expression/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-jdbc/4.2.8.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-autoconfigure/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-aop/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-data-jpa/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-jdbc/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-logging/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-tomcat/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.boot:spring-boot-starter-web/1.4.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-commons/1.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-context/1.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-netflix-core/1.2.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-netflix-eureka-client/1.2.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter/1.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter-archaius/1.2.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter-eureka/1.2.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.cloud:spring-cloud-starter-ribbon/1.2.2.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.data:spring-data-commons/1.12.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.data:spring-data-jpa/1.10.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.retry:spring-retry/1.1.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework.security:spring-security-rsa/1.0.3.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-aop/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-aspects/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-beans/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-context/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-expression/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-jdbc/4.3.4.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-orm/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-tx/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-web/4.2.8.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-webmvc/4.2.8.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-tx/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-web/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.springframework:spring-webmvc/4.3.4.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: org.yaml:snakeyaml/1.17" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: xml-apis:xml-apis/1.0.b2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: xmlpull:xmlpull/1.1.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: xpp3:xpp3_min/1.1.4c" level="project" />
