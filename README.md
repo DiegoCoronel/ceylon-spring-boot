@@ -14,7 +14,7 @@ The project is divided into the following services:
 - Discovery
 - `Foo`
 - `Bar`
-- `FooBar` (tests feign client, ribbon, etc).
+- `FooBar` (tests feign client, ribbon, etc)
 
 [Ceylon]: https://ceylon-lang.org
 [Spring Boot]: https://projects.spring.io/spring-boot/
