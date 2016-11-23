@@ -1,0 +1,18 @@
+plugins {
+    id 'com.athaydes.ceylon' version '1.3.0' apply true
+}
+
+subprojects { subprj ->
+    subprj.apply plugin: 'com.athaydes.ceylon'
+
+    repositories {
+        mavenCentral()
+    }
+
+    ceylon {
+        module = subprj.name
+        flatClasspath = true
+        importJars = true
+        forceImports = true
+    }
+}

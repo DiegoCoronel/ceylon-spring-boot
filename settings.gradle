@@ -1,0 +1,5 @@
+include 'gateway'
+include 'discovery'
+include 'foo'
+include 'bar'
+include 'foobar'
