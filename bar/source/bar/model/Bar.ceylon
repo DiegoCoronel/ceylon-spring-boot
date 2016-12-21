@@ -12,4 +12,6 @@ shared class Bar(name) {
 	
 	shared String name;
 	
+	shared String? city =>
+			"Berlin";
 }
