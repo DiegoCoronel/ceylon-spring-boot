@@ -23,8 +23,8 @@ The project is divided into the following services:
 
 You'll need the following prerequisites to get started:
 
-- [Ceylon 1.3.1](https://ceylon-lang.org/download)
-- Ceylon IDE 1.3.1 for IntelliJ or Eclipse
+- [Ceylon 1.3.3](https://ceylon-lang.org/download)
+- Ceylon IDE 1.3.3 for IntelliJ or Eclipse
 
 ### Compiling
 
