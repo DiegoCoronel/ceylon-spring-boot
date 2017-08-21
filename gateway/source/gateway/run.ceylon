@@ -1,9 +1,13 @@
+import java.lang {
+    Types {
+        classForType
+    }
+}
+
 import org.springframework.boot {
-	SpringApplication
+    SpringApplication
 }
-import ceylon.interop.java {
-	javaClass
-}
+
 "Run the service."
 shared void run()
-		=> SpringApplication.run(javaClass<GatewayApplication>());
+		=> SpringApplication.run(classForType<GatewayApplication>());

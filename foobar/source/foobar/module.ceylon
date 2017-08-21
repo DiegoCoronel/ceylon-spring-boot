@@ -11,5 +11,5 @@ module foobar "1.0.0" {
 	import maven:com.h2database:"h2" "1.4.193";
 	import maven:org.liquibase:"liquibase-core" "3.5.3";
 	
-	import ceylon.interop.spring "1.3.1";
+	import ceylon.interop.spring "1.3.3";
 }
