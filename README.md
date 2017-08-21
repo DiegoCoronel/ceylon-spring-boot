@@ -50,6 +50,12 @@ Discovery service, type:
 To start a service from within the IDE, go to it's `run()`
 function, and Run it.
 
+The services must be started in the following order:
+
+1. First, the `discovery` service.
+2. Next, `foo`, `bar`, and/or `foobar`.
+3. Finally, the `gateway` service.
+
 ## How to use the microservices
 
 An important detail is that the services are not available

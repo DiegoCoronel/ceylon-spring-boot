@@ -2,5 +2,5 @@
   <remove groupId="ch.qos.logback" artifactId="logback-core" />
   <remove groupId="ch.qos.logback" artifactId="logback-classic" />
   
-  <add groupId="org.springframework" artifactId="spring-core" version="4.3.4.RELEASE" />
+  <add groupId="org.springframework" artifactId="spring-core" version="4.3.10.RELEASE" />
 </overrides>
