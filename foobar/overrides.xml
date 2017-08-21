@@ -1,6 +1,8 @@
 <overrides>
-  <remove groupId="ch.qos.logback" artifactId="logback-core" />
-  <remove groupId="ch.qos.logback" artifactId="logback-classic" />
-  
-  <add groupId="org.springframework" artifactId="spring-core" version="4.3.10.RELEASE" />
+    <add groupId="org.springframework"
+         artifactId="spring-core"
+         version="4.3.10.RELEASE" />
+    <add groupId="com.h2database"
+         artifactId="h2"
+         version="1.4.196"/>
 </overrides>

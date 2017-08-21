@@ -1,11 +1,13 @@
-import org.springframework.boot {
-	SpringApplication
+import java.lang {
+    Types {
+        classForType
+    }
 }
 
-import ceylon.interop.java {
-	javaClass
+import org.springframework.boot {
+    SpringApplication
 }
 
 "Run the service."
 shared void run()
-		=> SpringApplication.run(javaClass<FooApplication>());
+		=> SpringApplication.run(classForType<FooApplication>());

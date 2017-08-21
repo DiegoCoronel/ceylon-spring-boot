@@ -1,6 +1,8 @@
 <overrides>
-  <remove groupId="ch.qos.logback" artifactId="logback-core" />
-  <remove groupId="ch.qos.logback" artifactId="logback-classic" />
-  <add groupId="com.fasterxml.jackson.dataformat" artifactId="jackson-dataformat-xml" version="2.9.0" />
-  <add groupId="org.springframework" artifactId="spring-core" version="4.3.10.RELEASE" />
+  <add groupId="com.fasterxml.jackson.dataformat"
+       artifactId="jackson-dataformat-xml"
+       version="2.9.0" />
+  <add groupId="org.springframework"
+       artifactId="spring-core"
+       version="4.3.10.RELEASE" />
 </overrides>
